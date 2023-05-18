@@ -366,7 +366,7 @@
     <!-- Reboot -->
     <uses-permission android:name="android.permission.REBOOT" />
     <uses-permission android:name="android.permission.RECOVERY" />
-    
+
     <!-- kill app api -->
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
 
@@ -380,6 +380,9 @@
 
     <!-- Network traffic monitor -->
     <uses-permission android:name="android.permission.MAINLINE_NETWORK_STACK" />
+
+    <!-- SNCF -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".SystemUIApplication"
@@ -488,6 +491,9 @@
                 android:singleUser="true"
                 android:permission="android.permission.BIND_WALLPAPER"
                 android:exported="true" />
+
+        <service android:name=".sncf.SNCFService"
+          android:enabled="true" />
 
         <activity android:name=".tuner.TunerActivity"
                   android:enabled="false"

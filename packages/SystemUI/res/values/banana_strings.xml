@@ -120,6 +120,8 @@
 
     <!-- FPS view text placeholder -->
     <string name="fps_text_placeholder"><xliff:g id="fps" example="90">%1$d</xliff:g></string>
+    <!-- SNCF Tile -->
+    <string name="quick_settings_sncf_label">SNCF</string>
 
     <!-- Bluetooth dialog -->
     <string name="turn_on_bluetooth">Use Bluetooth</string>
